@@ -35,9 +35,105 @@ nav {
     20px 40px 40px rgba(0,0,0,.5); 
 }
 
+#plannerContainer {
+    /* provides spacing between the top and bottom nav bars and the content */
+    margin-top: 10px;
+    margin-bottom: 40px;
+    
+    /* provide spaceing around the text */
+    /* padding: 40px; */
+    
+} 
+
+
+.plannerRow {
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 1.5;
+    border-radius: 15px;
+}
+
+.timeBox {
+    color: black;
+    height:100%;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px 0px 0px 15px;
+    display: inline-block;
+    font-size: 20px;
+    padding-top: 8px;
+    margin-right: 10px;
+    
+    border-right: solid rgb(129, 129, 129) 2px;
+}
+
+.dailyPlan {
+    color: black;  
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    height:100%;
+    width: 100%;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+}
+
+.btn {
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0px 15px 15px 0px;
+  
+}
+
+img {
+    padding-top: 4px;
+    width: 35%;
+    height: auto;
+    
+}
+
 footer {
     border-top: 2px solid rgb(122, 122, 122);
     opacity: 85%;
+}
+
+
+@media (max-width: 992px) {
+    img {
+        padding-top: 8px;
+        width: 40%;
+        height: auto;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    img {
+        padding-top: 8px;
+        width: 65%;
+        height: auto;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    img {
+
+        width: 150%;
+        height: auto;
+    }
+    .timeBox {
+        font-size: 12px;
+        padding: 4px;
+    }
 }
 
 @media (min-width: 602px) {
@@ -53,6 +149,7 @@ footer {
     .h1 {
         font-size: 1.2rem;
     }
+    
 }
 
 @media (max-width: 352px) {
