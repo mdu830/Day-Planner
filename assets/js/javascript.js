@@ -111,15 +111,15 @@ $(document).ready(function(){
 
               $hourRow.css("background-color","lightgrey");
               $hourRow.css("opacity", "70%");
-              $hourRow.css("-webkit-opacity", "70%");
+              $hourRow.css("-webkit-opacity", "0.7");
             } else if ( hr > now24) {
               $hourRow.css("background-color","lightgreen");
               $hourRow.css("opacity", "85%");
-              $hourRow.css("-webkit-opacity", "85%");
+              $hourRow.css("-webkit-opacity", "0.8");
             } else {
               $hourRow.css("background-color","tomato");
               $hourRow.css("opacity", "95%");
-              $hourRow.css("-webkit-opacity", "95%");
+              $hourRow.css("-webkit-opacity", "0.9");
             }
           };
         // set row color based on time
