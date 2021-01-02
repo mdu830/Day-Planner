@@ -57,18 +57,20 @@ nav {
 }
 
 .timeBox {
-    color: rgb(189, 11, 11);
+    color: rgb(228, 228, 228);
     height:100%;
     width: 100%;
     text-align: center;
-    border-radius: 15px 0px 0px 15px;
     display: inline-block;
     font-size: 20px;
     font-weight: bold;
     padding-top: 8px;
-    
-    
-    
+
+}
+
+.col-2 {
+    background-color: black;
+    border-radius: 15px 0px 0px 15px;
 }
 
 .dailyPlan {
@@ -90,7 +92,7 @@ input {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 0px 15px 15px 0px;
-  
+    
 }
 
 img {
