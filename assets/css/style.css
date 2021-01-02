@@ -65,9 +65,9 @@ nav {
     display: inline-block;
     font-size: 20px;
     padding-top: 8px;
-    margin-right: 10px;
     
-    border-right: solid rgb(129, 129, 129) 2px;
+    
+    
 }
 
 .dailyPlan {
@@ -133,7 +133,7 @@ footer {
     }
     .timeBox {
         font-size: 12px;
-        padding: 4px;
+        padding-top: 14px;
     }
 }
 
