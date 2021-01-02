@@ -115,9 +115,11 @@ $(document).ready(function(){
             } else if ( hr > now24) {
               $hourRow.css("background-color","lightgreen");
               $hourRow.css("opacity", "85%");
+              $hourRow.css("-webkit-opacity", "85%");
             } else {
               $hourRow.css("background-color","tomato");
               $hourRow.css("opacity", "95%");
+              $hourRow.css("-webkit-opacity", "95%");
             }
           };
         // set row color based on time
