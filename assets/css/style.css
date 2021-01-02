@@ -69,8 +69,11 @@ nav {
 }
 
 .col-2 {
-    background-color: black;
+    background-color: rgb(43, 43, 43);
     border-radius: 15px 0px 0px 15px;
+    border-top: solid 1px darkgray;
+    border-left: solid 1px darkgray;
+    border-bottom: solid 1px darkgray;
 }
 
 .dailyPlan {
