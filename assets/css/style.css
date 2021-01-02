@@ -64,6 +64,7 @@ nav {
     border-radius: 15px 0px 0px 15px;
     display: inline-block;
     font-size: 20px;
+    font-weight: bold;
     padding-top: 8px;
     
     
@@ -134,6 +135,7 @@ footer {
     }
     .timeBox {
         font-size: 12px;
+        font-weight: bolder;
         padding-top: 14px;
     }
 }
