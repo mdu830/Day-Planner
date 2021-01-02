@@ -111,6 +111,7 @@ $(document).ready(function(){
 
               $hourRow.css("background-color","lightgrey");
               $hourRow.css("opacity", "70%");
+              $hourRow.css("-webkit-opacity", "70%");
             } else if ( hr > now24) {
               $hourRow.css("background-color","lightgreen");
               $hourRow.css("opacity", "85%");
