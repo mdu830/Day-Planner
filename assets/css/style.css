@@ -102,6 +102,7 @@ img {
 footer {
     border-top: 2px solid rgb(122, 122, 122);
     opacity: 85%;
+    -webkit-opacity: 0.8;
 }
 
 
