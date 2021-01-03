@@ -37,12 +37,8 @@ nav {
 }
 
 #plannerContainer {
-    /* provides spacing between the top and bottom nav bars and the content */
     margin-top: 10px;
     margin-bottom: 40px;
-    
-    /* provide spaceing around the text */
-    /* padding: 40px; */
     
 } 
 
@@ -56,7 +52,7 @@ nav {
     border-radius: 15px;
 }
 
-.timeBox {
+.timeDiv {
     color: rgb(228, 228, 228);
     height:100%;
     width: 100%;
@@ -95,13 +91,14 @@ input {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 0px 15px 15px 0px;
+    opacity: 100%;
     
 }
 
 img {
     padding-top: 4px;
     width: 35%;
-    height: auto;
+    height: 80%;
     
 }
 
@@ -110,6 +107,12 @@ footer {
     opacity: 85%;
     -webkit-opacity: 0.8;
 }
+
+.btn:hover {
+    background-color: darkblue;
+    
+}
+
 
 
 @media (max-width: 992px) {

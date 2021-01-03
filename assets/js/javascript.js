@@ -49,10 +49,10 @@ $(document).ready(function(){
         var $col2TimeDiv = $('<div>');
         $col2TimeDiv.addClass('col-2');
       
-        // create timeBox element (contains time)
-        var $timeBoxSpn = $('<span>');
+        // create timeDiv element (contains time)
+        var $timeSpan = $('<span>');
         // can use this to get value
-        $timeBoxSpn.attr('class','timeBox');
+        $timeSpan.attr('class','timeDiv');
         
         // format hours for display
         var displayHour = 0;
@@ -65,12 +65,12 @@ $(document).ready(function(){
           amPm = "am";
         }
         
-        // populate timeBox with time
-        $timeBoxSpn.text(`${displayHour} ${amPm}`);
+        // populate timeDiv with time
+        $timeSpan.text(`${displayHour} ${amPm}`);
     
         // insert into col inset into timebox
         $rowDiv.append($col2TimeDiv);
-        $col2TimeDiv.append($timeBoxSpn);
+        $col2TimeDiv.append($timeSpan);
         // STOP building Time box portion of row
     
         // START building input portion of row
@@ -98,6 +98,8 @@ $(document).ready(function(){
         $saveDiv.addClass('col-1 btn btn-primary btn-block');
         $saveDiv.attr('id',`saveid-${index}`);
         $saveDiv.attr('save-id',index);
+        $saveDiv.attr("alt", "Save Event");
+        $saveDiv.attr("title", "Save Event")
         
         var $imgDiv = $('<img>');
         $imgDiv.attr('src', "assets/images/saveicon.png");
