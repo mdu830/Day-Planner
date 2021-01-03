@@ -108,8 +108,8 @@ footer {
     -webkit-opacity: 0.8;
 }
 
-.btn:hover {
-    background-color: darkblue;
+.btn-primary:active {
+    color: darkblue;
     
 }
 
