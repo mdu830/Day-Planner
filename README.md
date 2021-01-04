@@ -2,6 +2,8 @@
 
 # Day-Planner
 
+https://mdu830.github.io/Day-Planner/
+
 ### This is a day planner for someone with a busy schedule! 
 
 <ul>
