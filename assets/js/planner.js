@@ -128,5 +128,9 @@ $(document).ready(function(){
         localStorage.setItem("storedPlans", JSON.stringify(planTextArr));
       }); 
 
+      $(window).scroll(function() {
+        var scrolledY = $(window).scrollTop();
+        $('#container').css('background-position', 'left ' + ((scrolledY)) + 'px');
+      });
 
 });
