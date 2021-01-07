@@ -77,7 +77,7 @@ $(document).ready(function(){
         $planSpanner.attr('type','text');
         $planSpanner.attr('class','dailyEvent');
     
-        $planSpanner.val( inputArr[index] );
+        $planSpanner.val(inputArr[index]);
         
         var $userInputSection = $('<div>');
 
