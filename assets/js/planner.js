@@ -6,9 +6,9 @@ $(document).ready(function(){
 
     var now = moment().format('H');
 
-
     // apply the current date and day to #dateAndDayTitle
     var $date = $("#dateAndDayTitle");
+
     $date.text(currentDateDay);
 
     var storedEvents = JSON.parse(localStorage.getItem("storedEvents"));
@@ -32,19 +32,23 @@ $(document).ready(function(){
         
         // rows
         var $row = $('<div>');
+
         $row.addClass('row');
         $row.addClass('planRow');
         $row.attr('hr-index',hr);
       
         //col and time
         var $time = $('<div>');
+
         $time.addClass('col-2');
 
         var $timeSpan = $('<span>');
+
         $timeSpan.attr('class','time');
         
         // AM or PM time of day
         var displayHour = 0;
+
         var midDay = "";
 
         if (hr > 12) { 
@@ -84,6 +88,7 @@ $(document).ready(function(){
     
         // save button/div
         var $saveBtn = $('<saveIt>');
+
         $saveBtn.addClass('col-1 btn btn-primary btn-block');
         $saveBtn.attr('id',`saveid-${index}`);
         $saveBtn.attr('save-id',index);
@@ -91,6 +96,7 @@ $(document).ready(function(){
         $saveBtn.attr("title", "Save Event")
         
         var $imgDiv = $('<img>');
+
         $imgDiv.attr('src', "assets/images/saveicon.png");
 
         $row.append($saveBtn);
@@ -112,9 +118,11 @@ $(document).ready(function(){
               $hrRow.css("-webkit-opacity", "0.8");
 
             } else {
+
               $hrRow.css("background-color","tomato");
               $hrRow.css("opacity", "95%");
               $hrRow.css("-webkit-opacity", "0.9");
+
             }
           };
 
@@ -123,6 +131,7 @@ $(document).ready(function(){
       };
 
       $(document).on('click','saveIt', function(event) {
+
         event.preventDefault();  
 
         $index = $(this).attr('save-id');
