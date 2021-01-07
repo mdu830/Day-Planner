@@ -4,12 +4,7 @@ $(document).ready(function(){
 
     var currentDateDay = moment().format('dddd MMMM Do YYYY');
 
-    var now24 = moment().format('H');
-
-    //for console logging
-    
-    //if (logger) { console.log(); }
-    //var logger = false;
+    var now = moment().format('H');
 
 
     // apply the current date and day to #dateSpan
@@ -46,17 +41,17 @@ $(document).ready(function(){
         
         // AM or PM time of day
         var displayHour = 0;
-        var amPm = "";
+        var midDay = "";
         if (hr > 12) { 
           displayHour = hr - 12;
-          amPm = "pm";
+          midDay = "pm";
         } else {
           displayHour = hr;
-          amPm = "am";
+          midDay = "am";
         }
         
         // put time in timeDiv
-        $timeSpan.text(`${displayHour} ${amPm}`);
+        $timeSpan.text(`${displayHour} ${midDay}`);
     
     
         $rowDiv.append($col2TimeDiv);
@@ -95,12 +90,12 @@ $(document).ready(function(){
         //change row color according to past present or future time
         function updateColor ($hourRow,hr) { 
         
-            if ( hr < now24) {
+            if ( hr < now) {
 
               $hourRow.css("background-color","lightgrey");
               $hourRow.css("opacity", "70%");
               $hourRow.css("-webkit-opacity", "0.7");
-            } else if ( hr > now24) {
+            } else if ( hr > now) {
               $hourRow.css("background-color","lightgreen");
               $hourRow.css("opacity", "100%");
               $hourRow.css("-webkit-opacity", "0.8");
