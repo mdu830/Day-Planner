@@ -36,9 +36,9 @@ $(document).ready(function(){
         $row.addClass('plannerRow');
         $row.attr('hr-index',hr);
       
-        //col and timeDiv
-        var $timeDiv = $('<div>');
-        $timeDiv.addClass('col-2');
+        //col and time
+        var $time = $('<div>');
+        $time.addClass('col-2');
 
         var $timeSpan = $('<span>');
         $timeSpan.attr('class','timeDiv');
@@ -59,11 +59,11 @@ $(document).ready(function(){
 
         }
         
-        // put time in timeDiv
+        // put time in time
         $timeSpan.text(`${displayHour} ${midDay}`);
     
-        $row.append($timeDiv);
-        $timeDiv.append($timeSpan);
+        $row.append($time);
+        $time.append($timeSpan);
         
         //input column for event 
         var $dailyPlanSpn = $('<input>');
