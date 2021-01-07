@@ -1,4 +1,4 @@
-//This is the planner javascript for "Dusiness Day Planner"
+//This is the planner javascript for "Business Day Planner"
 
 $(document).ready(function(){
 
