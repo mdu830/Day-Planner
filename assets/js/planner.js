@@ -97,24 +97,24 @@ $(document).ready(function(){
         $saveBtn.append($imgDiv);
     
         //change row color according to past present or future time
-        function rowColor ($hourRow,hr) { 
+        function rowColor ($hrRow,hr) { 
         
             if ( hr < now) {
 
-              $hourRow.css("background-color","lightgrey");
-              $hourRow.css("opacity", "70%");
-              $hourRow.css("-webkit-opacity", "0.7");
+              $hrRow.css("background-color","lightgrey");
+              $hrRow.css("opacity", "70%");
+              $hrRow.css("-webkit-opacity", "0.7");
 
             } else if ( hr > now) {
 
-              $hourRow.css("background-color","lightgreen");
-              $hourRow.css("opacity", "100%");
-              $hourRow.css("-webkit-opacity", "0.8");
+              $hrRow.css("background-color","lightgreen");
+              $hrRow.css("opacity", "100%");
+              $hrRow.css("-webkit-opacity", "0.8");
 
             } else {
-              $hourRow.css("background-color","tomato");
-              $hourRow.css("opacity", "95%");
-              $hourRow.css("-webkit-opacity", "0.9");
+              $hrRow.css("background-color","tomato");
+              $hrRow.css("opacity", "95%");
+              $hrRow.css("-webkit-opacity", "0.9");
             }
           };
 
