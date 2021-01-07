@@ -66,21 +66,21 @@ $(document).ready(function(){
         $time.append($timeSpan);
         
         //input column for event 
-        var $dailyPlanSpn = $('<input>');
+        var $planSpn = $('<input>');
     
-        $dailyPlanSpn.attr('id',`input-${index}`);
-        $dailyPlanSpn.attr('hr-index',index);
-        $dailyPlanSpn.attr('type','text');
-        $dailyPlanSpn.attr('class','dailyPlan');
+        $planSpn.attr('id',`input-${index}`);
+        $planSpn.attr('hr-index',index);
+        $planSpn.attr('type','text');
+        $planSpn.attr('class','dailyPlan');
     
-        $dailyPlanSpn.val( inputArr[index] );
+        $planSpn.val( inputArr[index] );
         
         var $userInputSection = $('<div>');
 
         $userInputSection.addClass('col');
 
         $row.append($userInputSection);
-        $userInputSection.append($dailyPlanSpn);
+        $userInputSection.append($planSpn);
     
         // save button/div
         var $saveBtn = $('<saveIt>');
