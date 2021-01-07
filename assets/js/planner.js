@@ -97,7 +97,7 @@ $(document).ready(function(){
         $saveBtn.append($imgDiv);
     
         //change row color according to past present or future time
-        function updateColor ($hourRow,hr) { 
+        function rowColor ($hourRow,hr) { 
         
             if ( hr < now) {
 
@@ -118,7 +118,7 @@ $(document).ready(function(){
             }
           };
 
-        updateColor($row, hr);
+        rowColor($row, hr);
         $planContainer.append($row);
       };
 
