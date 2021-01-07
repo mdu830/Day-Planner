@@ -7,8 +7,8 @@ $(document).ready(function(){
     var now = moment().format('H');
 
 
-    // apply the current date and day to #dateSpan
-    var $date = $("#dateSpan");
+    // apply the current date and day to #dateAndDayTitle
+    var $date = $("#dateAndDayTitle");
     $date.text(currentDateDay);
 
     var storedEvents = JSON.parse(localStorage.getItem("storedEvents"));
