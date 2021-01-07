@@ -33,7 +33,7 @@ $(document).ready(function(){
         // rows
         var $row = $('<div>');
         $row.addClass('row');
-        $row.addClass('plannerRow');
+        $row.addClass('planRow');
         $row.attr('hr-index',hr);
       
         //col and time
@@ -41,7 +41,7 @@ $(document).ready(function(){
         $time.addClass('col-2');
 
         var $timeSpan = $('<span>');
-        $timeSpan.attr('class','timeDiv');
+        $timeSpan.attr('class','time');
         
         // AM or PM time of day
         var displayHour = 0;
@@ -71,7 +71,7 @@ $(document).ready(function(){
         $planSpanner.attr('id',`input-${index}`);
         $planSpanner.attr('hr-index',index);
         $planSpanner.attr('type','text');
-        $planSpanner.attr('class','dailyPlan');
+        $planSpanner.attr('class','dailyEvent');
     
         $planSpanner.val( inputArr[index] );
         
