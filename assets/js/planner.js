@@ -4,8 +4,6 @@ $(document).ready(function(){
 
     var currentDateDay = moment().format('dddd MMMM Do YYYY');
 
-    var now = moment().format('H');
-
     // apply the current date and day to #dateAndDayTitle
     var $date = $("#dateAndDayTitle");
 
@@ -21,6 +19,8 @@ $(document).ready(function(){
 
       inputArr = new Array(12);
     }
+
+    var currentHour = moment().format('H');
 
     var $planContainer = $('#planContainer');
 
@@ -105,13 +105,13 @@ $(document).ready(function(){
         //change row color according to past present or future time
         function rowColor ($hrRow,hr) { 
         
-            if ( hr < now) {
+            if ( hr < currentHour) {
 
               $hrRow.css("background-color","lightgrey");
               $hrRow.css("opacity", "70%");
               $hrRow.css("-webkit-opacity", "0.7");
 
-            } else if ( hr > now) {
+            } else if ( hr > currentHour) {
 
               $hrRow.css("background-color","lightgreen");
               $hrRow.css("opacity", "100%");
